@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // This must be '/' for custom domains
+  base: '/', // Use '/' for custom domains (www.blurbasketball.com)
 })
