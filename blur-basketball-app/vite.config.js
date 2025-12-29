@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/blur-basketball/',
+  base: '/', // This ensures it works on your www.yourdomain.com
 })
