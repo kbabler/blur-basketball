@@ -1,7 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // This tells Vite to load files from blurbasketball.com/
+  base: '/', 
+  build: {
+    outDir: 'dist',
+  }
 })
