@@ -93,7 +93,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white pt-32 md:pt-0">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white pt-32">
         <div className="absolute inset-0 z-0">
            <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] blur-[150px] rounded-full opacity-20 animate-pulse" style={{ backgroundColor: colors.purple }}></div>
            <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] blur-[150px] rounded-full opacity-15" style={{ backgroundColor: colors.mint }}></div>
@@ -204,10 +204,10 @@ const App = () => {
             <div className="rounded-[2.5rem] p-10 shadow-sm border-4 flex flex-col" style={{ backgroundColor: colors.lavender + '40', borderColor: colors.purple }}>
               <div className="text-xs font-black uppercase tracking-widest mb-4 opacity-40">Stage 03</div>
               <h3 className="text-2xl font-black italic uppercase mb-4" style={{ color: colors.purple }}>Performance</h3>
-              <p className="text-sm font-bold text-gray-700 mb-2">Position-Specific Mastery</p>
-              <p className="text-sm text-gray-500 mb-8 font-medium" style={{ textAlign: 'justify', hyphens: 'auto', width: '100%' }}>Optimizing the Engine for high-school readiness and advanced play.</p>
+              <p className="text-sm font-bold text-gray-700 mb-2">Role-Specific Mastery</p>
+              <p className="text-sm text-gray-500 mb-8 font-medium" style={{ textAlign: 'justify', hyphens: 'auto', width: '100%' }}>Bridging skill development and tactics for high school readiness.</p>
               <ul className="space-y-3 mt-auto">
-                {['Position Mastery', 'Advanced Training', 'HS Preparation'].map(t => (
+                {['Role Mastery', 'Advanced Training', 'HS Preparation'].map(t => (
                   <li key={t} className="flex items-center gap-3 text-sm font-bold text-gray-700">
                     <Lucide.CheckCircle2 size={16} style={{ color: colors.mint }} /> {t}
                   </li>
@@ -239,7 +239,7 @@ const App = () => {
         <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
            <div className="max-w-4xl mx-auto text-center mb-16">
               <h2 className="text-4xl md:text-6xl font-black italic uppercase mb-6 tracking-tighter" style={{ color: colors.mint }}>The Blur Coaching <span style={{ color: colors.purple }}>Pillars</span></h2>
-              <p className="text-xl text-black font-medium" style={{ textAlign: 'justify', hyphens: 'auto', width: '100%' }}>Our coaches operate with a Threshold mentality—instilling respect and engagement before a single ball is dribbled.</p>
+              <p className="text-xl text-black font-medium" style={{ textAlign: 'justify', hyphens: 'auto', width: '100%' }}>Effort and decision-making are the two most ability-independent skills that can be taught. We focus on building an environment that emphasizes these.</p>
            </div>
            <div className="w-full flex justify-center">
              <div className="grid md:grid-cols-3 gap-12 mx-auto">
@@ -320,15 +320,15 @@ const App = () => {
         <div className="w-full max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto border p-12 md:p-16 rounded-[4rem] shadow-xl" style={{ backgroundColor: colors.dark, borderColor: colors.mint }}>
              <div className="text-center mb-12">
-               <h2 className="text-4xl md:text-6xl font-black italic uppercase mb-6 tracking-tighter" style={{ color: colors.mint }}>Ready to <span className="text-white">Blur</span> the Competition?</h2>
-               <p className="text-xl" style={{ color: colors.mint }}>Join our next evaluation session or skills clinic.</p>
+               <h2 className="text-4xl md:text-6xl font-black italic uppercase mb-6 tracking-tighter text-white">Experience the Higher Standard</h2>
+               <p className="text-xl" style={{ color: colors.mint }}>Join our next clinic or evaluation to see how our professionalized coaching and structured curriculum set us apart.</p>
              </div>
              <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={(e) => e.preventDefault()}>
                <input type="text" placeholder="Athlete Name" className="rounded-2xl p-5 placeholder:text-gray-500 focus:outline-none transition-all" style={{ backgroundColor: 'rgba(118, 196, 157, 0.1)', border: `2px solid ${colors.mint}`, color: colors.mint }} />
                <input type="email" placeholder="Email Address" className="rounded-2xl p-5 placeholder:text-gray-500 focus:outline-none transition-all" style={{ backgroundColor: 'rgba(118, 196, 157, 0.1)', border: `2px solid ${colors.mint}`, color: colors.mint }} />
                <input type="text" placeholder="Current Grade" className="rounded-2xl p-5 placeholder:text-gray-500 focus:outline-none transition-all" style={{ backgroundColor: 'rgba(118, 196, 157, 0.1)', border: `2px solid ${colors.mint}`, color: colors.mint }} />
                <button className="px-8 py-5 rounded-2xl font-black italic uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-2xl" style={{ backgroundColor: colors.mint, color: colors.dark }}>
-                  Submit Inquiry
+                  Register Now
                </button>
              </form>
           </div>
@@ -336,7 +336,7 @@ const App = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-20 bg-white border-t border-gray-100">
+      <footer className="py-12 bg-white border-t border-gray-100">
         <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
             <div className="lg:col-span-1">
