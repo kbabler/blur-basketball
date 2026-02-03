@@ -93,7 +93,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white pt-32 md:pt-0">
         <div className="absolute inset-0 z-0">
            <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] blur-[150px] rounded-full opacity-20 animate-pulse" style={{ backgroundColor: colors.purple }}></div>
            <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] blur-[150px] rounded-full opacity-15" style={{ backgroundColor: colors.mint }}></div>
@@ -371,7 +371,7 @@ const App = () => {
               <h4 className="font-black italic uppercase text-xs tracking-[0.2em] text-gray-400 mb-8">Connect</h4>
               <div className="space-y-4 text-gray-600 font-bold italic uppercase text-sm">
                 <p>West Metro, Twin Cities</p>
-                <p style={{ color: colors.purple }}>info@blurbasketball.com</p>
+                <p style={{ color: colors.purple }}>info@polarathleticgroup.com</p>
                 <div className="flex gap-4 mt-6">
                    <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:text-white transition-all cursor-pointer" style={{ '&:hover': { backgroundColor: colors.purple } }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.purple} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}><Lucide.Users size={20}/></div>
                    <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:text-white transition-all cursor-pointer" style={{ '&:hover': { backgroundColor: colors.mint } }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.mint} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}><Lucide.Trophy size={20}/></div>
@@ -381,7 +381,7 @@ const App = () => {
           </div>
           
           <div className="pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-xs font-black uppercase tracking-widest text-gray-400">
-             <p>© 2025 Blur Basketball Club. A Higher Standard.</p>
+             <p>Powered by Polar Athletic Group</p>
              <div className="flex gap-8 mt-6 md:mt-0">
                 <a href="#" className="hover:text-gray-900">Privacy</a>
                 <a href="#" className="hover:text-gray-900">Conduct</a>
