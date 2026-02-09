@@ -63,9 +63,9 @@ const App = () => {
             <div className="hidden lg:flex justify-start gap-10 items-center">
               <NavLink href="#handbook">Handbook</NavLink>
               <NavLink href="#coaching">Coaching</NavLink>
-              <button className="px-8 py-3 rounded-full font-black italic uppercase tracking-wider text-white transition-all hover:shadow-[0_0_20px_rgba(137,97,196,0.4)] hover:-translate-y-0.5" style={{ backgroundColor: colors.purple }}>
+              <a href="https://app.tripointforge.com/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full font-black italic uppercase tracking-wider text-white transition-all hover:shadow-[0_0_20px_rgba(137,97,196,0.4)] hover:-translate-y-0.5" style={{ backgroundColor: colors.purple }}>
                 Register
-              </button>
+              </a>
             </div>
 
             <button className="lg:hidden absolute right-4 p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -84,9 +84,9 @@ const App = () => {
                <NavLink href="#model" mobile>Developmental Model</NavLink>
                <NavLink href="#handbook" mobile>Parent Handbook</NavLink>
                <NavLink href="#coaching" mobile>Coaching Pillars</NavLink>
-               <button className="mt-8 px-12 py-4 rounded-full font-black text-white text-xl uppercase italic shadow-xl" style={{ backgroundColor: colors.purple }}>
+               <a href="https://app.tripointforge.com/" target="_blank" rel="noopener noreferrer" className="block mt-8 px-12 py-4 rounded-full font-black text-white text-xl uppercase italic shadow-xl" style={{ backgroundColor: colors.purple }}>
                   Register Now
-               </button>
+               </a>
              </div>
           </div>
         )}
@@ -109,12 +109,12 @@ const App = () => {
               We have evolved with a structured, athletic-department approach. Led by ADs and Head Coaches, Blur provides the organized communication, professional coaching, and developmental roadmap your athlete deserves.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95" style={{ backgroundColor: colors.mint, color: colors.dark }}>
+              <a href="https://app.tripointforge.com/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95 text-center" style={{ backgroundColor: colors.mint, color: colors.dark }}>
                 Join the Club
-              </button>
-              <button className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95" style={{ backgroundColor: colors.dark, color: colors.mint }}>
+              </a>
+              <a href="#spring-cycle" className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95 text-center" style={{ backgroundColor: colors.dark, color: colors.mint }}>
                 Season Info
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -234,6 +234,269 @@ const App = () => {
         </div>
       </section>
 
+      {/* Spring Cycle Deployment Section */}
+      <section id="spring-cycle" className="py-24 bg-white w-full">
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
+          <SectionHeading subtitle="Practices begin early April. Full kit and tournament schedule included.">
+            2026 Spring Cycle Deployment
+          </SectionHeading>
+
+          <div className="w-full flex justify-center">
+            <div className="grid md:grid-cols-3 gap-8 mx-auto max-w-5xl">
+              <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-3xl border-2 hover:shadow-xl transition-all" style={{ borderColor: colors.lavender }}>
+                <div className="w-14 h-14 rounded-2xl mb-6 flex items-center justify-center text-white" style={{ backgroundColor: colors.purple }}>
+                  <Lucide.Calendar size={28} />
+                </div>
+                <h3 className="text-2xl font-black italic uppercase mb-3 tracking-tight" style={{ color: colors.purple }}>Duration</h3>
+                <p className="text-gray-700 font-bold text-lg">April – June 2026</p>
+                <p className="text-gray-600 font-medium mt-2">Practices begin early April</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-mint-50 to-white p-8 rounded-3xl border-2 hover:shadow-xl transition-all" style={{ borderColor: colors.mint }}>
+                <div className="w-14 h-14 rounded-2xl mb-6 flex items-center justify-center text-white" style={{ backgroundColor: colors.mint }}>
+                  <Lucide.MapPin size={28} />
+                </div>
+                <h3 className="text-2xl font-black italic uppercase mb-3 tracking-tight" style={{ color: colors.mint }}>Location</h3>
+                <p className="text-gray-700 font-bold">International School of Minnesota</p>
+                <p className="text-gray-600 font-medium mt-2">6385 Beach Rd<br/>Eden Prairie, MN 55344</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-3xl border-2 hover:shadow-xl transition-all" style={{ borderColor: colors.purple }}>
+                <div className="w-14 h-14 rounded-2xl mb-6 flex items-center justify-center text-white" style={{ backgroundColor: colors.purple }}>
+                  <Lucide.Package size={28} />
+                </div>
+                <h3 className="text-2xl font-black italic uppercase mb-3 tracking-tight" style={{ color: colors.purple }}>The Kit</h3>
+                <p className="text-gray-700 font-bold">Full UA Technical Jersey Set</p>
+                <p className="text-gray-600 font-medium mt-2">$120 value + Gear Package (Backpack & Team Warm-up)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Investment & Capacity Section */}
+      <section className="py-24 w-full" style={{ backgroundColor: colors.lavender + '20' }}>
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
+          <SectionHeading subtitle="Transparent, all-inclusive pricing. No hidden costs, no surprise fees.">
+            Investment & Capacity
+          </SectionHeading>
+
+          <div className="w-full flex justify-center mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mx-auto max-w-4xl w-full">
+              {/* Developmental Card */}
+              <div className="bg-white rounded-3xl p-10 border-4 hover:shadow-2xl transition-all hover:scale-105" style={{ borderColor: colors.mint }}>
+                <div className="text-xs font-black uppercase tracking-widest mb-4" style={{ color: colors.mint }}>Developmental</div>
+                <div className="mb-6">
+                  <div className="text-5xl font-black italic" style={{ color: colors.purple }}>$925</div>
+                  <div className="text-sm font-bold text-gray-500 mt-2">All-In Program Fee</div>
+                </div>
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center gap-3">
+                    <Lucide.Users size={20} style={{ color: colors.mint }} />
+                    <span className="font-bold text-gray-700">Grades 4th - 7th</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Lucide.Trophy size={20} style={{ color: colors.mint }} />
+                    <span className="font-bold text-gray-700">7 Tournament Events</span>
+                  </div>
+                </div>
+                <ul className="space-y-3">
+                  {['Full UA Jersey Set', 'Complete Gear Package', 'Professional Coaching', '7 Events Included'].map(item => (
+                    <li key={item} className="flex items-center gap-2 text-sm font-medium text-gray-600">
+                      <Lucide.CheckCircle2 size={16} style={{ color: colors.mint }} /> {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Showcase Card */}
+              <div className="bg-white rounded-3xl p-10 border-4 hover:shadow-2xl transition-all hover:scale-105" style={{ borderColor: colors.purple }}>
+                <div className="text-xs font-black uppercase tracking-widest mb-4" style={{ color: colors.purple }}>Showcase</div>
+                <div className="mb-6">
+                  <div className="text-5xl font-black italic" style={{ color: colors.purple }}>$1,125</div>
+                  <div className="text-sm font-bold text-gray-500 mt-2">All-In Program Fee</div>
+                </div>
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center gap-3">
+                    <Lucide.Users size={20} style={{ color: colors.purple }} />
+                    <span className="font-bold text-gray-700">Grades 8th - 11th</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Lucide.Trophy size={20} style={{ color: colors.purple }} />
+                    <span className="font-bold text-gray-700">8-9 Tournament Events</span>
+                  </div>
+                </div>
+                <ul className="space-y-3">
+                  {['Full UA Jersey Set', 'Complete Gear Package', 'Elite Coaching', '8-9 Events Included'].map(item => (
+                    <li key={item} className="flex items-center gap-2 text-sm font-medium text-gray-600">
+                      <Lucide.CheckCircle2 size={16} style={{ color: colors.purple }} /> {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto bg-white rounded-2xl p-8 border-2" style={{ borderColor: colors.mint }}>
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: colors.mint }}>
+                <Lucide.ShieldCheck size={24} className="text-white" />
+              </div>
+              <div>
+                <h4 className="text-xl font-black italic uppercase mb-2 tracking-tight" style={{ color: colors.purple }}>Mandatory Compliance</h4>
+                <p className="text-gray-700 font-medium leading-relaxed">All athletes must maintain an active <strong>AAU Membership</strong> (~$60), which provides primary injury insurance for the duration of the cycle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Training Cadence Section */}
+      <section className="py-24 bg-white w-full">
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
+          <SectionHeading subtitle="Structured practice schedule designed for skill retention and family flexibility.">
+            Training Cadence
+          </SectionHeading>
+
+          <div className="w-full flex justify-center">
+            <div className="grid md:grid-cols-2 gap-8 mx-auto max-w-4xl w-full">
+              {/* Boys Training */}
+              <div className="bg-gradient-to-br rounded-3xl p-10 shadow-lg" style={{ background: `linear-gradient(135deg, ${colors.purple}15, ${colors.lavender}30)` }}>
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style={{ backgroundColor: colors.purple }}>
+                    <Lucide.Users size={28} />
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-black italic uppercase tracking-tight" style={{ color: colors.purple }}>Boys Training</h3>
+                    <p className="text-sm font-bold text-gray-600">Monday / Wednesday</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="bg-white rounded-2xl p-6 border-2" style={{ borderColor: colors.purple }}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm font-black uppercase tracking-wider" style={{ color: colors.purple }}>Grades 4-7</span>
+                      <Lucide.Clock size={20} style={{ color: colors.purple }} />
+                    </div>
+                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>6:00 PM – 7:30 PM</p>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 border-2" style={{ borderColor: colors.purple }}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm font-black uppercase tracking-wider" style={{ color: colors.purple }}>Grades 8-11</span>
+                      <Lucide.Clock size={20} style={{ color: colors.purple }} />
+                    </div>
+                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>7:30 PM – 9:00 PM</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Girls Training */}
+              <div className="bg-gradient-to-br rounded-3xl p-10 shadow-lg" style={{ background: `linear-gradient(135deg, ${colors.mint}15, ${colors.mint}30)` }}>
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style={{ backgroundColor: colors.mint }}>
+                    <Lucide.Users size={28} />
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-black italic uppercase tracking-tight" style={{ color: colors.mint }}>Girls Training</h3>
+                    <p className="text-sm font-bold text-gray-600">Tuesday / Thursday</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="bg-white rounded-2xl p-6 border-2" style={{ borderColor: colors.mint }}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm font-black uppercase tracking-wider" style={{ color: colors.mint }}>Grades 4-7</span>
+                      <Lucide.Clock size={20} style={{ color: colors.mint }} />
+                    </div>
+                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>6:00 PM – 7:30 PM</p>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 border-2" style={{ borderColor: colors.mint }}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm font-black uppercase tracking-wider" style={{ color: colors.mint }}>Grades 8-11</span>
+                      <Lucide.Clock size={20} style={{ color: colors.mint }} />
+                    </div>
+                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>7:30 PM – 9:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-2xl mx-auto mt-8 text-center">
+            <p className="text-sm text-gray-500 font-medium italic">* Times subject to change based on facility availability</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Calendar Section */}
+      <section className="py-24 w-full" style={{ backgroundColor: colors.lavender + '20' }}>
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
+          <SectionHeading subtitle="Proposed tournament windows for the 2026 Spring Cycle. Final events confirmed based on team readiness.">
+            Event Calendar
+          </SectionHeading>
+
+          <div className="w-full flex justify-center">
+            <div className="grid md:grid-cols-3 gap-8 mx-auto max-w-5xl">
+              {/* April */}
+              <div className="bg-white rounded-3xl p-8 shadow-lg border-2" style={{ borderColor: colors.purple }}>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: colors.purple }}>
+                    <Lucide.Calendar size={24} />
+                  </div>
+                  <h3 className="text-3xl font-black italic uppercase tracking-tight" style={{ color: colors.purple }}>April</h3>
+                </div>
+                <ul className="space-y-3">
+                  {['April 4th', 'April 10th-12th', 'April 17th-19th'].map(date => (
+                    <li key={date} className="flex items-center gap-3 py-3 px-4 rounded-xl" style={{ backgroundColor: colors.lavender + '20' }}>
+                      <Lucide.Trophy size={18} style={{ color: colors.purple }} />
+                      <span className="font-bold text-gray-700">{date}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* May */}
+              <div className="bg-white rounded-3xl p-8 shadow-lg border-2" style={{ borderColor: colors.mint }}>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: colors.mint }}>
+                    <Lucide.Calendar size={24} />
+                  </div>
+                  <h3 className="text-3xl font-black italic uppercase tracking-tight" style={{ color: colors.mint }}>May</h3>
+                </div>
+                <ul className="space-y-3">
+                  {['May 1st-3rd', 'May 8th-10th', 'May 15th-17th', 'May 29th-31st'].map(date => (
+                    <li key={date} className="flex items-center gap-3 py-3 px-4 rounded-xl" style={{ backgroundColor: colors.mint + '20' }}>
+                      <Lucide.Trophy size={18} style={{ color: colors.mint }} />
+                      <span className="font-bold text-gray-700">{date}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* June */}
+              <div className="bg-white rounded-3xl p-8 shadow-lg border-2" style={{ borderColor: colors.purple }}>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: colors.purple }}>
+                    <Lucide.Calendar size={24} />
+                  </div>
+                  <h3 className="text-3xl font-black italic uppercase tracking-tight" style={{ color: colors.purple }}>June</h3>
+                </div>
+                <ul className="space-y-3">
+                  {['June 6th-7th', 'June 13th'].map(date => (
+                    <li key={date} className="flex items-center gap-3 py-3 px-4 rounded-xl" style={{ backgroundColor: colors.lavender + '20' }}>
+                      <Lucide.Trophy size={18} style={{ color: colors.purple }} />
+                      <span className="font-bold text-gray-700">{date}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Coaching Pillars */}
       <section id="coaching" className="py-24 bg-white w-full">
         <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
@@ -320,17 +583,25 @@ const App = () => {
         <div className="w-full max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto border p-12 md:p-16 rounded-[4rem] shadow-xl" style={{ backgroundColor: colors.dark, borderColor: colors.mint }}>
              <div className="text-center mb-12">
-               <h2 className="text-4xl md:text-6xl font-black italic uppercase mb-6 tracking-tighter text-white">Experience the Higher Standard</h2>
-               <p className="text-xl" style={{ color: colors.mint }}>Join our next clinic or evaluation to see how our professionalized coaching and structured curriculum set us apart.</p>
+               <h2 className="text-4xl md:text-6xl font-black italic uppercase mb-6 tracking-tighter text-white">Secure Your Spot in the 2026 Season</h2>
+               <p className="text-xl mb-6" style={{ color: colors.mint }}>Registration is now active. To maintain our professional coach-to-player ratios, we operate with strict capacity limits per age group.</p>
+               <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl mb-4" style={{ backgroundColor: colors.mint + '20', border: `2px solid ${colors.mint}` }}>
+                 <Lucide.AlertCircle size={24} style={{ color: colors.mint }} />
+                 <p className="text-lg font-black italic uppercase" style={{ color: colors.mint }}>$500 Non-Refundable Deposit Required</p>
+               </div>
+               <p className="text-sm text-gray-400 max-w-2xl mx-auto">A $500 deposit secures your athlete's place in the Spring Cycle. This deposit is applied to your total program fee.</p>
              </div>
-             <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={(e) => e.preventDefault()}>
-               <input type="text" placeholder="Athlete Name" className="rounded-2xl p-5 placeholder:text-gray-500 focus:outline-none transition-all" style={{ backgroundColor: 'rgba(118, 196, 157, 0.1)', border: `2px solid ${colors.mint}`, color: colors.mint }} />
-               <input type="email" placeholder="Email Address" className="rounded-2xl p-5 placeholder:text-gray-500 focus:outline-none transition-all" style={{ backgroundColor: 'rgba(118, 196, 157, 0.1)', border: `2px solid ${colors.mint}`, color: colors.mint }} />
-               <input type="text" placeholder="Current Grade" className="rounded-2xl p-5 placeholder:text-gray-500 focus:outline-none transition-all" style={{ backgroundColor: 'rgba(118, 196, 157, 0.1)', border: `2px solid ${colors.mint}`, color: colors.mint }} />
-               <button className="px-8 py-5 rounded-2xl font-black italic uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-2xl" style={{ backgroundColor: colors.mint, color: colors.dark }}>
-                  Register Now
-               </button>
-             </form>
+             <div className="flex justify-center">
+               <a href="https://app.tripointforge.com/" target="_blank" rel="noopener noreferrer" className="px-16 py-6 rounded-2xl font-black italic uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-2xl text-center inline-block" style={{ backgroundColor: colors.mint, color: colors.dark }}>
+                  Register & Submit Deposit
+               </a>
+             </div>
+             <div className="mt-8 text-center">
+               <p className="text-sm text-gray-400 flex items-center justify-center gap-2">
+                 <Lucide.Info size={16} />
+                 <span>Charges will appear on your statement as <a href="https://www.polarathleticgroup.com" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-white transition-colors" style={{ color: colors.mint }}>Polar Athletic Group</a></span>
+               </p>
+             </div>
           </div>
         </div>
       </section>
@@ -380,13 +651,20 @@ const App = () => {
             </div>
           </div>
           
-          <div className="pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-xs font-black uppercase tracking-widest text-gray-400">
-             <p>Powered by Polar Athletic Group</p>
+          <div className="pt-10 border-t border-gray-100">
+            <div className="text-center mb-6">
+              <p className="text-sm text-gray-600 font-medium leading-relaxed max-w-2xl mx-auto">
+                Blur Basketball is a program of <a href="https://www.polarathleticgroup.com" target="_blank" rel="noopener noreferrer" className="font-black hover:underline" style={{ color: colors.purple }}>Polar Athletic Group</a>. The Blur Development Model (BDM) and all Blur Basketball programming are proprietary systems of Polar Athletic Group.
+              </p>
+            </div>
+            <div className="flex flex-col md:flex-row justify-between items-center text-xs font-black uppercase tracking-widest text-gray-400">
+             <p>© 2026 <a href="https://www.polarathleticgroup.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900">Polar Athletic Group</a>. All Rights Reserved.</p>
              <div className="flex gap-8 mt-6 md:mt-0">
                 <a href="#" className="hover:text-gray-900">Privacy</a>
                 <a href="#" className="hover:text-gray-900">Conduct</a>
                 <a href="#" className="hover:text-gray-900">Safesport</a>
              </div>
+          </div>
           </div>
         </div>
       </footer>
