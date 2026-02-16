@@ -287,7 +287,7 @@ const App = () => {
               <div className="bg-white rounded-3xl p-10 border-4 hover:shadow-2xl transition-all hover:scale-105" style={{ borderColor: colors.mint }}>
                 <div className="text-xs font-black uppercase tracking-widest mb-4" style={{ color: colors.mint }}>Developmental</div>
                 <div className="mb-6">
-                  <div className="text-5xl font-black italic" style={{ color: colors.purple }}>$925</div>
+                  <div className="text-5xl font-black italic" style={{ color: colors.purple }}>$1,060</div>
                   <div className="text-sm font-bold text-gray-500 mt-2">All-In Program Fee</div>
                 </div>
                 <div className="space-y-4 mb-8">
@@ -313,7 +313,7 @@ const App = () => {
               <div className="bg-white rounded-3xl p-10 border-4 hover:shadow-2xl transition-all hover:scale-105" style={{ borderColor: colors.purple }}>
                 <div className="text-xs font-black uppercase tracking-widest mb-4" style={{ color: colors.purple }}>Showcase</div>
                 <div className="mb-6">
-                  <div className="text-5xl font-black italic" style={{ color: colors.purple }}>$1,125</div>
+                  <div className="text-5xl font-black italic" style={{ color: colors.purple }}>$1,260</div>
                   <div className="text-sm font-bold text-gray-500 mt-2">All-In Program Fee</div>
                 </div>
                 <div className="space-y-4 mb-8">
@@ -337,6 +337,21 @@ const App = () => {
             </div>
           </div>
 
+          {/* Fee Breakdown */}
+          <div className="max-w-3xl mx-auto bg-gray-50 rounded-2xl p-8 border-2 border-gray-200 mb-8">
+            <h4 className="text-xl font-black italic uppercase mb-4 tracking-tight" style={{ color: colors.purple }}>Program Fee Breakdown</h4>
+            <div className="space-y-3">
+              <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-sm">
+                <span className="font-bold" style={{ color: colors.mint }}>Developmental:</span>
+                <span className="text-gray-700 font-medium">$800 (registration & coaching) + $200 (jerseys & gear) + $60 (AAU) = <strong>$1,060</strong></span>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-sm">
+                <span className="font-bold" style={{ color: colors.purple }}>Showcase:</span>
+                <span className="text-gray-700 font-medium">$1,000 (registration & coaching) + $200 (jerseys & gear) + $60 (AAU) = <strong>$1,260</strong></span>
+              </div>
+            </div>
+          </div>
+
           <div className="max-w-3xl mx-auto bg-white rounded-2xl p-8 border-2" style={{ borderColor: colors.mint }}>
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: colors.mint }}>
@@ -344,7 +359,7 @@ const App = () => {
               </div>
               <div>
                 <h4 className="text-xl font-black italic uppercase mb-2 tracking-tight" style={{ color: colors.purple }}>Mandatory Compliance</h4>
-                <p className="text-gray-700 font-medium leading-relaxed">All athletes must maintain an active <strong>AAU Membership</strong> (~$60), which provides primary injury insurance for the duration of the cycle.</p>
+                <p className="text-gray-700 font-medium leading-relaxed">All athletes must maintain an active <strong>AAU Membership</strong> ($60), which provides primary injury insurance for the duration of the cycle.</p>
               </div>
             </div>
           </div>
