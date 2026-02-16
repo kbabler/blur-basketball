@@ -38,11 +38,15 @@ Blur Basketball operates on a transparent, all-inclusive fee structure. No hidde
 
 | Classification | Grade Level | Tournament Volume | All-In Program Fee |
 |----------------|-------------|-------------------|-------------------|
-| **Developmental** | 4th - 7th | 7 Events | **$925** |
-| **Showcase** | 8th - 11th | 8-9 Events | **$1,125** |
+| **Developmental** | 4th - 7th | 7 Events | **$1,060** |
+| **Showcase** | 8th - 11th | 8-9 Events | **$1,260** |
+
+**Program Fee Breakdown**:
+- **Developmental**: $800 (tournament registration & coaching) + $200 (UA jerseys & gear) + $60 (AAU membership) = $1,060
+- **Showcase**: $1,000 (tournament registration & coaching) + $200 (UA jerseys & gear) + $60 (AAU membership) = $1,260
 
 **Mandatory Compliance**:  
-All athletes must maintain an active AAU Membership (~$60), which provides primary injury insurance for the duration of the cycle.
+All athletes must maintain an active AAU Membership ($60), which provides primary injury insurance for the duration of the cycle.
 
 ---
 
