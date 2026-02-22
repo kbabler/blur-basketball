@@ -19,6 +19,11 @@ const App = () => {
     light: '#f9f9fb'
   };
 
+  const registrationUrl = 'https://app.tripointapp.com/register/blur-basketball-spring-2026';
+  const gearPackageUrl = 'https://bsnteamsports.com/shop/rgn2WkqkKm';
+  const fanGearUrl = 'https://bsnteamsports.com/shop/dDBpGYqxzB';
+  const aauMembershipUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdGFf3WKvRUvei4cHaRpfdAwJ5m5PliYi0Q4gTEovAi0Hf__Q/viewform?usp=publish-editor';
+
   const NavLink = ({ href, children, mobile }) => (
     <a 
       href={href} 
@@ -63,7 +68,7 @@ const App = () => {
             <div className="hidden lg:flex justify-start gap-10 items-center">
               <NavLink href="#handbook">Handbook</NavLink>
               <NavLink href="#coaching">Coaching</NavLink>
-              <a href="https://app.tripointforge.com/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full font-black italic uppercase tracking-wider text-white transition-all hover:shadow-[0_0_20px_rgba(137,97,196,0.4)] hover:-translate-y-0.5" style={{ backgroundColor: colors.purple }}>
+              <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full font-black italic uppercase tracking-wider text-white transition-all hover:shadow-[0_0_20px_rgba(137,97,196,0.4)] hover:-translate-y-0.5" style={{ backgroundColor: colors.purple }}>
                 Register
               </a>
             </div>
@@ -84,7 +89,7 @@ const App = () => {
                <NavLink href="#model" mobile>Developmental Model</NavLink>
                <NavLink href="#handbook" mobile>Parent Handbook</NavLink>
                <NavLink href="#coaching" mobile>Coaching Pillars</NavLink>
-               <a href="https://app.tripointforge.com/" target="_blank" rel="noopener noreferrer" className="block mt-8 px-12 py-4 rounded-full font-black text-white text-xl uppercase italic shadow-xl" style={{ backgroundColor: colors.purple }}>
+              <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="block mt-8 px-12 py-4 rounded-full font-black text-white text-xl uppercase italic shadow-xl" style={{ backgroundColor: colors.purple }}>
                   Register Now
                </a>
              </div>
@@ -109,7 +114,7 @@ const App = () => {
               We have evolved with a structured, athletic-department approach. Led by ADs and Head Coaches, Blur provides the organized communication, professional coaching, and developmental roadmap your athlete deserves.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a href="https://app.tripointforge.com/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95 text-center" style={{ backgroundColor: colors.mint, color: colors.dark }}>
+              <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95 text-center" style={{ backgroundColor: colors.mint, color: colors.dark }}>
                 Join the Club
               </a>
               <a href="#spring-cycle" className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95 text-center" style={{ backgroundColor: colors.dark, color: colors.mint }}>
@@ -301,9 +306,16 @@ const App = () => {
                   </div>
                 </div>
                 <ul className="space-y-3">
-                  {['Full UA Jersey Set', 'Complete Gear Package', 'Professional Coaching', '7 Events Included'].map(item => (
+                  {['Full UA Jersey Set + Complete Gear Package', 'Professional Coaching', '7 Events Included'].map(item => (
                     <li key={item} className="flex items-center gap-2 text-sm font-medium text-gray-600">
-                      <Lucide.CheckCircle2 size={16} style={{ color: colors.mint }} /> {item}
+                      <Lucide.CheckCircle2 size={16} style={{ color: colors.mint }} />
+                      {item === 'Full UA Jersey Set + Complete Gear Package' ? (
+                        <a href={gearPackageUrl} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity" style={{ color: colors.purple }}>
+                          {item}
+                        </a>
+                      ) : (
+                        item
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -327,9 +339,16 @@ const App = () => {
                   </div>
                 </div>
                 <ul className="space-y-3">
-                  {['Full UA Jersey Set', 'Complete Gear Package', 'Elite Coaching', '8-9 Events Included'].map(item => (
+                  {['Full UA Jersey Set + Complete Gear Package', 'Elite Coaching', '8-9 Events Included'].map(item => (
                     <li key={item} className="flex items-center gap-2 text-sm font-medium text-gray-600">
-                      <Lucide.CheckCircle2 size={16} style={{ color: colors.purple }} /> {item}
+                      <Lucide.CheckCircle2 size={16} style={{ color: colors.purple }} />
+                      {item === 'Full UA Jersey Set + Complete Gear Package' ? (
+                        <a href={gearPackageUrl} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity" style={{ color: colors.purple }}>
+                          {item}
+                        </a>
+                      ) : (
+                        item
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -343,11 +362,11 @@ const App = () => {
             <div className="space-y-3">
               <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-sm">
                 <span className="font-bold" style={{ color: colors.mint }}>Developmental:</span>
-                <span className="text-gray-700 font-medium">$800 (registration & coaching) + $200 (jerseys & gear) + $60 (AAU) = <strong>$1,060</strong></span>
+                <span className="text-gray-700 font-medium">$800 (registration & coaching) + $200 (jerseys & gear) + $60 (<a href={aauMembershipUrl} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity" style={{ color: colors.purple }}>AAU</a>) = <strong>$1,060</strong></span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-sm">
                 <span className="font-bold" style={{ color: colors.purple }}>Showcase:</span>
-                <span className="text-gray-700 font-medium">$1,000 (registration & coaching) + $200 (jerseys & gear) + $60 (AAU) = <strong>$1,260</strong></span>
+                <span className="text-gray-700 font-medium">$1,000 (registration & coaching) + $200 (jerseys & gear) + $60 (<a href={aauMembershipUrl} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity" style={{ color: colors.purple }}>AAU</a>) = <strong>$1,260</strong></span>
               </div>
             </div>
           </div>
@@ -359,7 +378,7 @@ const App = () => {
               </div>
               <div>
                 <h4 className="text-xl font-black italic uppercase mb-2 tracking-tight" style={{ color: colors.purple }}>Mandatory Compliance</h4>
-                <p className="text-gray-700 font-medium leading-relaxed">All athletes must maintain an active <strong>AAU Membership</strong> ($60), which provides primary injury insurance for the duration of the cycle.</p>
+                <p className="text-gray-700 font-medium leading-relaxed">All athletes must maintain an active <strong><a href={aauMembershipUrl} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity" style={{ color: colors.purple }}>AAU Membership</a></strong> ($60), which provides primary injury insurance for the duration of the cycle.</p>
               </div>
             </div>
           </div>
@@ -579,11 +598,22 @@ const App = () => {
                   <div className="space-y-6">
                     {[
                       { q: "How is playing time earned?", a: "Playing time is earned through learning what is taught and giving 100% effort every single day." },
-                      { q: "Where do we practice?", a: "We utilize premier facilities across the West Metro, including Wayzata, Minnetonka, and Hopkins districts." }
+                      { q: "Where do we practice?", a: "We utilize premier facilities across the West Metro, including Wayzata, Minnetonka, and Hopkins districts." },
+                      { q: "Where can families purchase fan gear?", a: "Fan gear is available through our official team store.", linkText: "Shop Fan Gear", linkHref: fanGearUrl }
                     ].map((faq, i) => (
                       <div key={i} className="bg-gray-50 p-6 rounded-[2rem] border border-gray-100 transition-all hover:bg-white hover:shadow-md">
                         <p className="font-black italic uppercase text-sm mb-2 tracking-wider" style={{ color: colors.purple }}>Q: {faq.q}</p>
-                        <p className="text-gray-600 font-medium leading-relaxed" style={{ textAlign: 'justify', hyphens: 'auto', width: '100%' }}>{faq.a}</p>
+                        <p className="text-gray-600 font-medium leading-relaxed" style={{ textAlign: 'justify', hyphens: 'auto', width: '100%' }}>
+                          {faq.a}
+                          {faq.linkHref && (
+                            <>
+                              {' '}
+                              <a href={faq.linkHref} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity" style={{ color: colors.purple }}>
+                                {faq.linkText}
+                              </a>
+                            </>
+                          )}
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -607,7 +637,7 @@ const App = () => {
                <p className="text-sm text-gray-400 max-w-2xl mx-auto">A $500 deposit secures your athlete's place in the Spring Cycle. This deposit is applied to your total program fee.</p>
              </div>
              <div className="flex justify-center">
-               <a href="https://app.tripointforge.com/" target="_blank" rel="noopener noreferrer" className="px-16 py-6 rounded-2xl font-black italic uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-2xl text-center inline-block" style={{ backgroundColor: colors.mint, color: colors.dark }}>
+              <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="px-16 py-6 rounded-2xl font-black italic uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-2xl text-center inline-block" style={{ backgroundColor: colors.mint, color: colors.dark }}>
                   Register & Submit Deposit
                </a>
              </div>
@@ -650,6 +680,7 @@ const App = () => {
                 <li><a href="#" className="hover:text-[#76C49D] transition-colors">Parent Handbook</a></li>
                 <li><a href="#" className="hover:text-[#76C49D] transition-colors">Coaching Checklist</a></li>
                 <li><a href="#" className="hover:text-[#76C49D] transition-colors">Season Schedule</a></li>
+                <li><a href={fanGearUrl} target="_blank" rel="noopener noreferrer" className="hover:text-[#76C49D] transition-colors">Fan Gear</a></li>
               </ul>
             </div>
 
