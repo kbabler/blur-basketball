@@ -20,7 +20,6 @@ const App = () => {
   };
 
   const registrationUrl = 'https://app.tripointapp.com/register/blur-basketball-spring-2026';
-  const tryoutsUrl = 'https://app.tripointapp.com/register/blur-basketball-spring-tryout-2026';
   const gearPackageUrl = 'https://bsnteamsports.com/shop/rgn2WkqkKm';
   const fanGearUrl = 'https://bsnteamsports.com/shop/dDBpGYqxzB';
   const aauMembershipUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdGFf3WKvRUvei4cHaRpfdAwJ5m5PliYi0Q4gTEovAi0Hf__Q/viewform?usp=publish-editor';
@@ -115,9 +114,6 @@ const App = () => {
               We have evolved with a structured, athletic-department approach. Led by ADs and Head Coaches, Blur provides the organized communication, professional coaching, and developmental roadmap your athlete deserves.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a href={tryoutsUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95 text-center" style={{ backgroundColor: colors.purple, color: 'white' }}>
-                Spring Tryouts
-              </a>
               <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 rounded-full font-black text-xl uppercase italic tracking-wider shadow-2xl transition-all hover:scale-105 active:scale-95 text-center" style={{ backgroundColor: colors.mint, color: colors.dark }}>
                 Join the Club
               </a>
