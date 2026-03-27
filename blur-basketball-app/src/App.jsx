@@ -393,7 +393,7 @@ const App = () => {
           </SectionHeading>
 
           <div className="w-full flex justify-center">
-            <div className="grid md:grid-cols-2 gap-8 mx-auto max-w-4xl w-full">
+            <div className="grid md:grid-cols-1 gap-8 mx-auto max-w-2xl w-full">
               {/* Boys Training */}
               <div className="bg-gradient-to-br rounded-3xl p-10 shadow-lg" style={{ background: `linear-gradient(135deg, ${colors.purple}15, ${colors.lavender}30)` }}>
                 <div className="flex items-center gap-4 mb-8">
@@ -412,7 +412,7 @@ const App = () => {
                       <span className="text-sm font-black uppercase tracking-wider" style={{ color: colors.purple }}>Grades 4-7</span>
                       <Lucide.Clock size={20} style={{ color: colors.purple }} />
                     </div>
-                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>6:00 PM – 7:30 PM</p>
+                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>6:00 PM – 7:45 PM</p>
                   </div>
                   
                   <div className="bg-white rounded-2xl p-6 border-2" style={{ borderColor: colors.purple }}>
@@ -420,38 +420,7 @@ const App = () => {
                       <span className="text-sm font-black uppercase tracking-wider" style={{ color: colors.purple }}>Grades 8-11</span>
                       <Lucide.Clock size={20} style={{ color: colors.purple }} />
                     </div>
-                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>7:30 PM – 9:00 PM</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Girls Training */}
-              <div className="bg-gradient-to-br rounded-3xl p-10 shadow-lg" style={{ background: `linear-gradient(135deg, ${colors.mint}15, ${colors.mint}30)` }}>
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white" style={{ backgroundColor: colors.mint }}>
-                    <Lucide.Users size={28} />
-                  </div>
-                  <div>
-                    <h3 className="text-3xl font-black italic uppercase tracking-tight" style={{ color: colors.mint }}>Girls Training</h3>
-                    <p className="text-sm font-bold text-gray-600">Tuesday / Thursday</p>
-                  </div>
-                </div>
-                
-                <div className="space-y-6">
-                  <div className="bg-white rounded-2xl p-6 border-2" style={{ borderColor: colors.mint }}>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-black uppercase tracking-wider" style={{ color: colors.mint }}>Grades 4-7</span>
-                      <Lucide.Clock size={20} style={{ color: colors.mint }} />
-                    </div>
-                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>6:00 PM – 7:30 PM</p>
-                  </div>
-                  
-                  <div className="bg-white rounded-2xl p-6 border-2" style={{ borderColor: colors.mint }}>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-black uppercase tracking-wider" style={{ color: colors.mint }}>Grades 8-11</span>
-                      <Lucide.Clock size={20} style={{ color: colors.mint }} />
-                    </div>
-                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>7:30 PM – 9:00 PM</p>
+                    <p className="text-2xl font-black italic" style={{ color: colors.dark }}>6:00 PM – 7:45 PM</p>
                   </div>
                 </div>
               </div>

@@ -55,12 +55,8 @@ All athletes must maintain an active AAU Membership ($60), which provides primar
 Our weekly practice schedule is designed to maximize repetition and skill retention while respecting family schedules. Times are subject to change based on facility availability.
 
 ### Boys Training (Monday/Wednesday)
-- **Grades 4-7**: 6:00 PM – 7:30 PM
-- **Grades 8-11**: 7:30 PM – 9:00 PM
-
-### Girls Training (Tuesday/Thursday)
-- **Grades 4-7**: 6:00 PM – 7:30 PM
-- **Grades 8-11**: 7:30 PM – 9:00 PM
+- **Grades 4-7**: 6:00 PM – 7:45 PM
+- **Grades 8-11**: 6:00 PM – 7:45 PM
 
 ---
 
