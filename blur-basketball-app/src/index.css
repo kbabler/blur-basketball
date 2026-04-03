@@ -1,63 +1,102 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  body {
-    @apply overflow-x-hidden;
-  }
-  
-  * {
-    @apply box-border;
-  }
+:root {
+  font-family: "Barlow", "Segoe UI", sans-serif;
+  color: #e8f1ef;
+  background: #06131a;
 }
-a:hover {
-  color: #535bf2;
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#root {
+  min-height: 100vh;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.holding-shell {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+  background: radial-gradient(circle at top, #143245 0%, #06131a 52%, #04090d 100%);
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.ambient {
+  position: absolute;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 999px;
+  filter: blur(86px);
+  opacity: 0.28;
+}
+
+.ambient-left {
+  top: -8rem;
+  left: -10rem;
+  background: #5fd7b4;
+}
+
+.ambient-right {
+  right: -8rem;
+  bottom: -10rem;
+  background: #217ea1;
+}
+
+.holding-card {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 34rem);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 2rem;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(14px);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.46);
+}
+
+.holding-logo {
+  width: clamp(10rem, 44vw, 15rem);
+  max-width: 100%;
+  height: auto;
+}
+
+.status-pill {
+  margin: 1.5rem auto 1.25rem;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(95, 215, 180, 0.6);
+  background: rgba(12, 58, 77, 0.65);
+  color: #8ff2d8;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.holding-title {
+  margin: 0;
+  color: #f2f7f6;
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.holding-text {
+  margin: 1rem auto 0;
+  max-width: 28ch;
+  color: rgba(232, 241, 239, 0.86);
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.5;
 }
